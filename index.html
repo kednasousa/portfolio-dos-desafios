@@ -1,83 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/variables.css">
+  <link rel="stylesheet" href="./assets/scroll/scroll.css">
+  <link rel="stylesheet" href="./assets/css/header/header.css">
+  <link rel="stylesheet" href="./assets/css/navbar/navbar.css">
+  <link rel="stylesheet" href="./assets/css/style/index.css">
+  <link rel="stylesheet" href="./assets/css/btn/btn.css">
+  <link rel="stylesheet" href="./assets/css/title/tile.css">
+  <link rel="stylesheet" href="./assets/css/main/container.css">
+  <link rel="stylesheet" href="./assets/css/card/card.css">
+  <link rel="stylesheet" href="./assets/css/footer/footer.css">
+  <link rel="stylesheet" href="./assets/css/responsive/responsive.css">
   <title>CodeLab - Desafios</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="content">
+    <div class="header__content">
       <div class="header__logo">
         <a href="https://github.com/kednasousa">
-          <span class="name">kednasousa<span class="ponto">.</span></span>
+          <span class="name">CodeLab<span class="ponto">.</span></span>
         </a>
-        <!-- <div class="theme"></div> -->
       </div>
+      <nav class="navbar">
+        <ul class="navbar__content">
+          <li class="navbar__link"><a href="#">Página Inicial</a></li>
+          <li class="navbar__link"><a href="#">Sobre</a></li>
+          <button class="navbar__btn">Entrar na comunidade</button>
+        </ul>
+      </nav>
     </div>
   </header>
 
+
+
   <main class="container">
-    <section class="introduction">
-      <div class="introduction__text">
-        <p>Comunidade de desenvolvedores</p>
+    <section class="introduction__container">
+      <div class="introduction__content">
+        <p class="introduction__text">Comunidade de desenvolvedores</p>
         <h1 class="title">
           Projetos da <span class="title__codelab">CodeLab</span>
         </h1>
-        <p>A CodeLab é uma comunidade para desafios de desenvolvimento frontend, onde os usuários podem treinar os seus
+        <p class="introduction__description">A CodeLab é uma comunidade para desafios de desenvolvimento frontend, onde
+          os usuários podem treinar os seus
           conhecimentos em programação.</p>
       </div>
-      <div class="introduction__image">
-        <img src="./assets/images/logo.svg" alt="Logo CodeLab">
+      <div class="introduction__image__container">
+        <img class="introduction__image" src="public/images/vector.svg" alt="Logo CodeLab">
+        <img class="pepita" src="public/images/clip-path-group.svg" alt="Logo CodeLab">
       </div>
     </section>
 
-    <section class="projects">
-      <div class="content__project">
-        <img src="./assets/images/logo-light.svg" alt="" class="project__img">
-        <div class="project__information">
-          <p class="title__project">Blog</p>
-          <div class="buttons__container">
-            <button class="btn">Detalhes</button>
-            <button class="btn">Acessar</button>
-          </div>
-        </div>
-      </div>
+    <section class="projects__container">
 
       <div class="content__project">
-        <img src="./assets/images/logo-light.svg" alt="" class="project__img">
-        <div class="project__information">
-          <p class="title__project">Blog</p>
-          <div class="buttons__container">
-            <button class="btn">Detalhes</button>
-            <button class="btn">Acessar</button>
+        <div class="card">
+          <div class="card__image">
+            <img class="project__img" src="public/images/logo-light.svg">
           </div>
-        </div>
-
-        <div class="content__project">
-          <img src="./assets/images/logo-light.svg" alt="" class="project__img">
-          <div class="project__information">
+          <div class="card__information">
             <p class="title__project">Blog</p>
             <div class="buttons__container">
-              <button class="btn">Detalhes</button>
-              <button class="btn">Acessar</button>
+              <button class="btn button button__detalhes">Detalhes</button>
+              <button class="btn button button__acessar">Acessar</button>
             </div>
           </div>
+        </div>
 
-          <div class="content__project">
-            <img src="./assets/images/logo-light.svg" alt="" class="project__img">
-            <div class="project__information">
-              <p class="title__project">Blog</p>
-              <div class="buttons__container">
-                <button class="btn">Detalhes</button>
-                <button class="btn">Acessar</button>
-              </div>
+        <div class="card">
+          <div class="card__image">
+            <img class="project__img" src="public/images/logo-light.svg">
+          </div>
+          <div class="card__information">
+            <p class="title__project">Blog</p>
+            <div class="buttons__container">
+              <button class="btn button button__detalhes">Detalhes</button>
+              <button class="btn button button__acessar">Acessar</button>
             </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <img class="project__img" src="public/images/logo-light.svg">
+          </div>
+          <div class="card__information">
+            <p class="title__project">Blog</p>
+            <div class="buttons__container">
+              <button class="btn button button__detalhes">Detalhes</button>
+              <button class="btn button button__acessar">Acessar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <img class="project__img" src="public/images/logo-light.svg">
+          </div>
+          <div class="card__information">
+            <p class="title__project">Blog</p>
+            <div class="buttons__container">
+              <button class="btn button button__detalhes">Detalhes</button>
+              <button class="btn button button__acessar">Acessar</button>
+            </div>
+          </div>
+        </div>
+
+        
+        
+      </div>
     </section>
   </main>
-  
+
   <footer class="footer">
     <p>© CodeLab 2021</p>
     <p>Desenvolvido por {<span class="footer__name">Kedna Sousa</span>}</p>
