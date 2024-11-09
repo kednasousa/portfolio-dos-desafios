@@ -1,0 +1,25 @@
+.header {
+  height: 5.625rem;
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--dark-40);
+  background: var(--dark-20);
+
+  & .header__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+    & .name {
+      font-size: 1.5rem;
+      flex-shrink: 1;
+      font-weight: bold;
+    }
+
+    & .ponto {
+      color: var(--brand-color-purple);
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.navbar__content {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+
+  & .navbar__link {
+    font-size: 1rem;
+    font-family: var(--font);
+    font-weight: 500;
+    transition: color 0.5s ease-out;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: var(--brand-color-purple);
+      transition: width .3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+      transition: width .3s;
+    }
+  }
+}

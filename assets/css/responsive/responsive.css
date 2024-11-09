@@ -1,0 +1,124 @@
+/* Responsive styles for portfolio-dos-desafios */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+
+    & .navbar {
+      display: none;
+    }
+
+    & .container {
+      padding: 10px;
+      width: 100%;
+    }
+
+    & .introduction__container {
+      padding: 0 10px;
+      width: 100%;
+
+      & .introduction__image__container {
+        display: none;
+      }
+    }
+
+    & .introduction__content {
+      width: 100%;
+
+      & .title {
+        font-size: 2rem;
+      }
+
+      & .introduction__text {
+        font-size: 1.3rem;
+      }
+
+      & .introduction__description {
+        font-size: 1.3rem;
+        width: 100%;
+      }
+
+    }
+
+    & .projects__container {
+      padding: 10px;
+      width: 100%;
+
+      & .content__project {
+        width: 100%;
+        gap: 10px;
+      }
+
+      & .card {
+        width: 100%;
+      }
+
+      & .card__information {
+        width: 100%;
+      }
+
+      & .project__img {
+        width: 100%;
+      }
+    }
+
+    & .footer {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+
+    & .container {
+      padding: 20px;
+      width: 100%;
+    }
+
+    & .introduction__container {
+      padding: 0 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      & .introduction__image__container {
+        display: none;
+      }
+    }
+
+    & .projects__container {
+      padding: 10px;
+      width: 100%;
+    }
+  }
+}
+
+
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .portfolio-item {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+}

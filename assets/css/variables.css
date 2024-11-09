@@ -10,8 +10,6 @@
   --dark-40: #34343a;
 
   --white: #ffffff;
-}
-
-body {
-  font-family: "Inter", sans-serif;
+  
+  --font: "Inter", sans-serif;
 }
